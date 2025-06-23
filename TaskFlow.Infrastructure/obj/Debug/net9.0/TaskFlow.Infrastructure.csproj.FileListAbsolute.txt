@@ -1,0 +1,17 @@
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Infrastructure.deps.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Infrastructure.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Infrastructure.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.AssemblyInfoInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.AssemblyInfo.cs
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\refint\TaskFlow.Infrastructure.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\ref\TaskFlow.Infrastructure.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.csproj.AssemblyReference.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Infrastructure.runtimeconfig.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Domain.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Domain.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.635E8F59.Up2Date
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.genruntimeconfig.cache

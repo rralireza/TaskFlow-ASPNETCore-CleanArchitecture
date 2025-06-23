@@ -1,0 +1,15 @@
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\bin\Debug\net9.0\TaskFlow.Application.deps.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\bin\Debug\net9.0\TaskFlow.Application.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\bin\Debug\net9.0\TaskFlow.Application.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\bin\Debug\net9.0\TaskFlow.Domain.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\bin\Debug\net9.0\TaskFlow.Domain.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.csproj.AssemblyReference.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.AssemblyInfoInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.AssemblyInfo.cs
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.csproj.CoreCompileInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.7EAD9043.Up2Date
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\refint\TaskFlow.Application.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\ref\TaskFlow.Application.dll
