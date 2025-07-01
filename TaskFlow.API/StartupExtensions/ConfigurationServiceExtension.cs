@@ -66,6 +66,7 @@ public static class ConfigurationServiceExtension
         services.AddScoped(typeof(IProjectGetterService), typeof(ProjectGetterService));
         services.AddScoped(typeof(IProjectPoliciesService), typeof(ProjectPoliciesService));
         services.AddScoped(typeof(IProjectUpdaterService), typeof(ProjectUpdaterService));
+        services.AddScoped(typeof(IProjectDeleterService), typeof(ProjectDeleterService));
 
         #endregion
 

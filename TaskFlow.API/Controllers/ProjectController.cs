@@ -17,11 +17,17 @@ namespace TaskFlow.API.Controllers
 
         private readonly IProjectUpdaterService _projectUpdaterService;
 
-        public ProjectController(IProjectAdderService projectAdderService, IProjectGetterService projectGetterService, IProjectUpdaterService projectUpdaterService)
+        private readonly IProjectDeleterService _projectDeleterService;
+
+        private readonly ILogger<ProjectController> _logger;
+
+        public ProjectController(IProjectAdderService projectAdderService, IProjectGetterService projectGetterService, IProjectUpdaterService projectUpdaterService, IProjectDeleterService projectDeleterService, ILogger<ProjectController> logger)
         {
             _projectAdderService = projectAdderService;
             _projectGetterService = projectGetterService;
             _projectUpdaterService = projectUpdaterService;
+            _projectDeleterService = projectDeleterService;
+            _logger = logger;
         }
 
         [HttpPost("CreateProject")]
@@ -78,6 +84,34 @@ namespace TaskFlow.API.Controllers
             catch (Exception ex)
             {
                 return BadRequest(string.Join(", ", ex.Message));
+            }
+        }
+
+        [HttpDelete("DeleteProject")]
+        [Authorize(Policy = "ProjectCreators")]
+        public async Task<IActionResult> DeleteProject(Guid projectId)
+        {
+            try
+            {
+                var response = await _projectDeleterService.DeleteProject(projectId);
+
+                if (response is null)
+                    return NotFound();
+
+                return Ok(response);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Forbid(ex.Message);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error while deleting project {ProjectId}", projectId);
+                return StatusCode(500, "An unexpected error occurred.");
             }
         }
     }
