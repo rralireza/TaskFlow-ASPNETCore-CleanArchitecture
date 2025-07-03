@@ -47,7 +47,7 @@ public class ProjectUpdaterService : IProjectUpdaterService
         var project = await _unitOfWork.Projects.GetByIdAsync(request.ProjectId);
 
         if (project == null)
-            throw new ArgumentNullException(nameof(project));
+            throw new ArgumentNullException("Project not exsists!");
 
         project.Title = request.Title;
         project.Description = request.Description;

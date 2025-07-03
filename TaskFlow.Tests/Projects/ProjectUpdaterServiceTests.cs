@@ -109,6 +109,7 @@ public class ProjectUpdaterServiceTests
     public async Task UpdateProject_ShouldThrowArgumentNullException_WhenProjectDoesNotExists()
     {
         //Arrange
+        Guid userId = Guid.NewGuid();
 
         UpdateProjectRequestDto dto = new()
         {
@@ -117,17 +118,33 @@ public class ProjectUpdaterServiceTests
             Description = "New Description"
         };
 
+        User user = new()
+        {
+            Id = userId,
+            Email = "test@example.com",
+            Fullname = "Test User",
+            Role = (byte)UserRolesEnum.User
+        };
+
         _validatorMock
             .Setup(x => x.ValidateAsync(It.IsAny<UpdateProjectRequestDto>(), default))
             .ReturnsAsync(new FluentValidation.Results.ValidationResult());
 
+        _projectPoliciesMock
+            .Setup(x => x.DuplicateTitle(userId, dto.Title))
+            .Returns(false);
+
         _unitOfWorkMock
             .Setup(x => x.Projects.GetByIdAsync(dto.ProjectId))
-            .ReturnsAsync((Project)null);
+            .ReturnsAsync((Project?)null);
+
+        _unitOfWorkMock
+            .Setup(x => x.Users.GetByIdAsync(userId))
+            .ReturnsAsync(user);
 
         _currentUserServiceMock
             .Setup(x => x.UserId)
-            .Returns(Guid.NewGuid());
+            .Returns(userId);
 
         //Act & Assert
         await Assert.ThrowsAsync<ArgumentNullException>(() => _service.UpdateProject(dto));

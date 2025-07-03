@@ -95,9 +95,6 @@ namespace TaskFlow.API.Controllers
             {
                 var response = await _projectDeleterService.DeleteProject(projectId);
 
-                if (response is null)
-                    return NotFound();
-
                 return Ok(response);
             }
             catch (UnauthorizedAccessException ex)

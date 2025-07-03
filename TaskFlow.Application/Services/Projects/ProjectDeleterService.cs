@@ -23,57 +23,52 @@ public class ProjectDeleterService : IProjectDeleterService
 
     public async Task<ProjectResponseDto> DeleteProject(Guid projectId)
     {
-        try
+
+        Guid? currentUserId = _currentUserService.UserId ?? null;
+
+        if (currentUserId == null)
         {
-            Guid? currentUserId = _currentUserService.UserId ?? null;
-
-            if (currentUserId == null)
-            {
-                _logger.LogWarning($"Attempt to delete project {projectId} by an unauthenticated user.");
-                throw new UnauthorizedAccessException("You must be logged in to delete a project.");
-            }
-
-            var user = await _unitOfWork.Users.GetByIdAsync(currentUserId.Value);
-
-            if (user == null)
-            {
-                _logger.LogWarning($"Attempt to delete project {projectId} by a non-existent user {currentUserId}.");
-                throw new UnauthorizedAccessException("You must be logged in to delete a project.");
-            }
-
-            var project = await _unitOfWork.Projects.GetByIdAsync(projectId);
-
-            if (project == null)
-            {
-                _logger.LogWarning($"Attempt to delete a non-existent project {project.Title} by user {user.Fullname}.");
-                throw new KeyNotFoundException("Project not found.");
-            }
-
-            //Validation: check if the user is the creator of the project or an admin
-            if (project.CreatedByUserId != user.Id || user.Role != (byte)UserRolesEnum.Admin)
-            {
-                _logger.LogWarning($"User {user.Fullname} attempted to delete project {project.Title} they do not own.");
-                throw new UnauthorizedAccessException("You do not have permission to delete this project.");
-            }
-
-            _unitOfWork.Projects.Delete(project);
-
-            await _unitOfWork.SaveAsync();
-
-            _logger.LogInformation($"Project {project.Title} deleted successfully by user {user.Fullname}.");
-
-            return new ProjectResponseDto
-            {
-                ProjectId = project.Id,
-                Title = project.Title,
-                Description = project.Description,
-                CreatedAt = project.CreatedAt,
-                CreateByUser = user.Fullname
-            };
+            _logger.LogWarning($"Attempt to delete project {projectId} by an unauthenticated user.");
+            throw new UnauthorizedAccessException("You must be logged in to delete a project.");
         }
-        catch (Exception ex)
+
+        var user = await _unitOfWork.Users.GetByIdAsync(currentUserId.Value);
+
+        if (user == null)
         {
-            throw new Exception(string.Join(", ", ex.Message));
+            _logger.LogWarning($"Attempt to delete project {projectId} by a non-existent user {currentUserId}.");
+            throw new UnauthorizedAccessException("You must be logged in to delete a project.");
         }
+
+        var project = await _unitOfWork.Projects.GetByIdAsync(projectId);
+
+        if (project == null)
+        {
+            _logger.LogWarning($"Attempt to delete a non-existent project {projectId} by user {currentUserId}.");
+            throw new KeyNotFoundException("Project not found.");
+        }
+
+        //Validation: check if the user is the creator of the project or an admin
+        if (project.CreatedByUserId != user.Id || user.Role != (byte)UserRolesEnum.Admin)
+        {
+            _logger.LogWarning($"User {currentUserId} attempted to delete project {projectId} they do not own.");
+            throw new UnauthorizedAccessException("You do not have permission to delete this project.");
+        }
+
+        _unitOfWork.Projects.Delete(project);
+
+        await _unitOfWork.SaveAsync();
+
+        _logger.LogInformation($"Project {project.Title} deleted successfully by user {user.Fullname}.");
+
+        return new ProjectResponseDto
+        {
+            ProjectId = project.Id,
+            Title = project.Title,
+            Description = project.Description,
+            CreatedAt = project.CreatedAt,
+            CreateByUser = user.Fullname
+        };
+
     }
 }
