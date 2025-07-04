@@ -69,6 +69,22 @@
   },
   {
     "ContainingType": "TaskFlow.API.Controllers.ProjectController",
+    "Method": "DeleteProject",
+    "RelativePath": "api/Project/DeleteProject",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskFlow.API.Controllers.ProjectController",
     "Method": "GetAllCurrentUserProjects",
     "RelativePath": "api/Project/GetAllCurrentUserProjects",
     "HttpMethod": "GET",

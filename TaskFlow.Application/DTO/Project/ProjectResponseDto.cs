@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Project;
 
-public class ProjectResponseDto
+public sealed class ProjectResponseDto
 {
     public Guid ProjectId { get; set; }
 

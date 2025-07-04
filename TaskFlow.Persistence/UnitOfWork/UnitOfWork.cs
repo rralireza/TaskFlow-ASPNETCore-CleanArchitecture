@@ -12,13 +12,16 @@ public class UnitOfWork : IUnitOfWork
 
     public IProjectRepository Projects { get; }
 
+    public ITaskItemRepository Tasks { get; }
+
     IUserRepository IUnitOfWork.Users => Users;
 
-    public UnitOfWork(TaskFlowDbContext context, IUserRepository users, IProjectRepository projects)
+    public UnitOfWork(TaskFlowDbContext context, IUserRepository users, IProjectRepository projects, ITaskItemRepository tasks)
     {
         _context = context;
         Users = users;
         Projects = projects;
+        Tasks = tasks;
     }
 
     public async Task<int> SaveAsync() => await _context.SaveChangesAsync();

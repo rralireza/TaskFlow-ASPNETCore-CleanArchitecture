@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Project;
 
-public class UpdateProjectRequestDto
+public sealed class UpdateProjectRequestDto
 {
     public Guid ProjectId { get; set; }
 

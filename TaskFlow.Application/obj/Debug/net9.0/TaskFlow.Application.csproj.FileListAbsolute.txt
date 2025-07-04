@@ -13,3 +13,4 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Ap
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\refint\TaskFlow.Application.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.pdb
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\ref\TaskFlow.Application.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Application\obj\Debug\net9.0\TaskFlow.Application.sourcelink.json

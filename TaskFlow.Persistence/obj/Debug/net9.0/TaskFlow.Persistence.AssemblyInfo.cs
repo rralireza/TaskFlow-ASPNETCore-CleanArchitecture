@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskFlow.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a35e757da96dcd232880021b52e8d66b4dfcfb66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+853f84499b87a1e3d6d62887496a75b72b867412")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskFlow.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskFlow.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

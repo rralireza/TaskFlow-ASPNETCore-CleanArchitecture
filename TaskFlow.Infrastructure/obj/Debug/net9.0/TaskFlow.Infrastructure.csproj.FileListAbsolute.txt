@@ -15,3 +15,4 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\bin\Debug\net9.0\TaskFlow.Domain.pdb
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.635E8F59.Up2Date
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.genruntimeconfig.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Infrastructure\obj\Debug\net9.0\TaskFlow.Infrastructure.sourcelink.json

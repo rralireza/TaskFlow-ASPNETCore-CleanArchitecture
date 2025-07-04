@@ -19,3 +19,4 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Persistence\obj\Debug\net9.0\TaskFlow.Pe
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Persistence\obj\Debug\net9.0\ref\TaskFlow.Persistence.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Persistence\bin\Debug\net9.0\TaskFlow.Infrastructure.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Persistence\bin\Debug\net9.0\TaskFlow.Infrastructure.pdb
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Persistence\obj\Debug\net9.0\TaskFlow.Persistence.sourcelink.json

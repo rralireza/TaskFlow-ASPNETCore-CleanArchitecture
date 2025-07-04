@@ -121,3 +121,4 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\refint\TaskFlow.T
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.pdb
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.genruntimeconfig.cache
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\ref\TaskFlow.Tests.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.sourcelink.json

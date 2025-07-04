@@ -8,5 +8,7 @@ public interface IUnitOfWork
 
     IProjectRepository Projects { get; }
 
+    ITaskItemRepository Tasks { get; }
+
     Task<int> SaveAsync();
 }

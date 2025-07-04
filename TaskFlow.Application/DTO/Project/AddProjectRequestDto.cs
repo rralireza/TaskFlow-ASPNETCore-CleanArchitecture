@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Project;
 
-public class AddProjectRequestDto
+public sealed class AddProjectRequestDto
 {
     public string Title { get; set; }
 

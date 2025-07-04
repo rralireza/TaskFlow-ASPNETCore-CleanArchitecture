@@ -46,12 +46,6 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\scopedcss\bundle\Ta
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.build.json
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.development.json
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets\msbuild.TaskFlow.API.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets\msbuild.TaskFlow.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets\msbuild.build.TaskFlow.API.props
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TaskFlow.API.props
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TaskFlow.API.props
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.pack.json
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\TaskFlow.BE976348.Up2Date
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\TaskFlow.API.dll
@@ -282,3 +276,9 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\bin\Debug\net9.0\ru\Microsoft.CodeAn
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\TaskFlow.API.sourcelink.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.API\obj\Debug\net9.0\staticwebassets.build.json.cache
