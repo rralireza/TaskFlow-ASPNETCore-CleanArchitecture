@@ -1,8 +1,10 @@
 ﻿using FluentValidation;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TaskFlow.Application.DTO.Project;
+using TaskFlow.Application.DTO.TaskItem;
 using TaskFlow.Application.DTO.User;
 using TaskFlow.Application.Intefaces.Repositories;
 using TaskFlow.Application.Intefaces.Services.JWT;
@@ -13,6 +15,7 @@ using TaskFlow.Application.Services.JWT;
 using TaskFlow.Application.Services.Projects;
 using TaskFlow.Application.Services.Users;
 using TaskFlow.Application.Validators.Project;
+using TaskFlow.Application.Validators.TaskItem;
 using TaskFlow.Application.Validators.User;
 using TaskFlow.Infrastructure.Data;
 using TaskFlow.Persistence.Repositories;
@@ -36,6 +39,7 @@ public static class ConfigurationServiceExtension
         services.AddScoped<IValidator<CreateUserDto>, CreateUserDtoValidator>();
         services.AddScoped<IValidator<AddProjectRequestDto>, CreateProjectValidator>();
         services.AddScoped<IValidator<UpdateProjectRequestDto>, UpdateProjectValidator>();
+        services.AddScoped<IValidator<AddTaskItemRequestDto>, CreateTaskItemValidator>();
         #endregion
 
         #region Injdect DbContext
@@ -53,6 +57,7 @@ public static class ConfigurationServiceExtension
         services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
         services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
         services.AddScoped(typeof(IProjectRepository), typeof(ProjectRepository));
+        services.AddScoped(typeof(ITaskItemRepository), typeof(TaskItemRepository));
 
         #endregion
 

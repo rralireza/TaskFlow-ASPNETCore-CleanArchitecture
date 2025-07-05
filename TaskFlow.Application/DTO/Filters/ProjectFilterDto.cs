@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Filters;
 
-public class ProjectFilterDto
+public sealed class ProjectFilterDto
 {
     public string? Title { get; set; }
     public DateTime? FromDate { get; set; }

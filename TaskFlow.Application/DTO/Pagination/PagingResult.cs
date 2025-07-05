@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Pagination;
 
-public class PagingResult<T>
+public sealed class PagingResult<T>
 {
     public List<T> Items { get; set; } = new();
     public int TotalCount { get; set; }

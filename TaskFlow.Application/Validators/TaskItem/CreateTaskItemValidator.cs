@@ -3,9 +3,9 @@ using TaskFlow.Application.DTO.TaskItem;
 
 namespace TaskFlow.Application.Validators.TaskItem;
 
-public sealed class CreateTaskItemValidatorcs : AbstractValidator<AddTaskItemRequestDto>
+public sealed class CreateTaskItemValidator : AbstractValidator<AddTaskItemRequestDto>
 {
-    public CreateTaskItemValidatorcs()
+    public CreateTaskItemValidator()
     {
         RuleFor(x => x.Title)
             .NotEmpty()
