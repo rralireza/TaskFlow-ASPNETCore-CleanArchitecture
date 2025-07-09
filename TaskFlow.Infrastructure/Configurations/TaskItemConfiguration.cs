@@ -45,5 +45,16 @@ public class TaskItemConfiguration : IEntityTypeConfiguration<TaskItem>
         builder.HasMany(c => c.Comments)
             .WithOne(t => t.TaskItem)
             .HasForeignKey(t => t.TaskItemId);
+
+        builder.Property(t => t.InsertDate)
+            .IsRequired();
+
+        builder.Property(t => t.InsertUser)
+            .IsRequired();
+
+        builder.HasOne(x => x.InsertUserDetails)
+            .WithMany()
+            .HasForeignKey(x => x.InsertUser)
+            .OnDelete(DeleteBehavior.NoAction);
     }
 }

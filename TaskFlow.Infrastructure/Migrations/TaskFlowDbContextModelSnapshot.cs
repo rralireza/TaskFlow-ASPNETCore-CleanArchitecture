@@ -103,6 +103,12 @@ namespace TaskFlow.Persistence.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
+                    b.Property<DateTime>("InsertDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("InsertUser")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<byte>("Priority")
                         .HasColumnType("tinyint");
 
@@ -120,6 +126,8 @@ namespace TaskFlow.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AssignedToUserId");
+
+                    b.HasIndex("InsertUser");
 
                     b.HasIndex("ProjectId");
 
@@ -191,6 +199,12 @@ namespace TaskFlow.Persistence.Migrations
                         .HasForeignKey("AssignedToUserId")
                         .OnDelete(DeleteBehavior.SetNull);
 
+                    b.HasOne("TaskFlow.Domain.Entities.User", "InsertUserDetails")
+                        .WithMany()
+                        .HasForeignKey("InsertUser")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("TaskFlow.Domain.Entities.Project", "Project")
                         .WithMany("Tasks")
                         .HasForeignKey("ProjectId")
@@ -198,6 +212,8 @@ namespace TaskFlow.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("AssignedToUser");
+
+                    b.Navigation("InsertUserDetails");
 
                     b.Navigation("Project");
                 });
