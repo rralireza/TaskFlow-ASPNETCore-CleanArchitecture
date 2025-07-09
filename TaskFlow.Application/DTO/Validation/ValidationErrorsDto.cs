@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.Validation;
 
-public class ValidationErrorsDto
+public sealed class ValidationErrorsDto
 {
     public string PropertyName { get; set; } = string.Empty;
 
