@@ -46,9 +46,6 @@ public class TaskItemConfiguration : IEntityTypeConfiguration<TaskItem>
             .WithOne(t => t.TaskItem)
             .HasForeignKey(t => t.TaskItemId);
 
-        builder.Property(t => t.InsertDate)
-            .IsRequired();
-
         builder.Property(t => t.InsertUser)
             .IsRequired();
 

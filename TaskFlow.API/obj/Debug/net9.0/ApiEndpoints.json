@@ -134,5 +134,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskFlow.API.Controllers.TaskController",
+    "Method": "CreateTask",
+    "RelativePath": "api/Task/CreateTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TaskFlow.Application.DTO.TaskItem.AddTaskItemRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

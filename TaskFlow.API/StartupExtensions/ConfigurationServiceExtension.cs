@@ -9,10 +9,12 @@ using TaskFlow.Application.DTO.User;
 using TaskFlow.Application.Intefaces.Repositories;
 using TaskFlow.Application.Intefaces.Services.JWT;
 using TaskFlow.Application.Intefaces.Services.Projects;
+using TaskFlow.Application.Intefaces.Services.TaskItem;
 using TaskFlow.Application.Intefaces.Services.Users;
 using TaskFlow.Application.Intefaces.UnitOfWork;
 using TaskFlow.Application.Services.JWT;
 using TaskFlow.Application.Services.Projects;
+using TaskFlow.Application.Services.TaskItem;
 using TaskFlow.Application.Services.Users;
 using TaskFlow.Application.Validators.Project;
 using TaskFlow.Application.Validators.TaskItem;
@@ -72,6 +74,8 @@ public static class ConfigurationServiceExtension
         services.AddScoped(typeof(IProjectPoliciesService), typeof(ProjectPoliciesService));
         services.AddScoped(typeof(IProjectUpdaterService), typeof(ProjectUpdaterService));
         services.AddScoped(typeof(IProjectDeleterService), typeof(ProjectDeleterService));
+
+        services.AddScoped(typeof(ITaskItemAdderService), typeof(TaskItemAdderService));
 
         #endregion
 

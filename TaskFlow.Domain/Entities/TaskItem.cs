@@ -25,8 +25,6 @@ public class TaskItem
 
     public Guid? AssignedToUserId { get; set; }
 
-    public DateTime InsertDate { get; set; }
-
     public Guid InsertUser { get; set; }
 
     public virtual User? AssignedToUser { get; set; }
