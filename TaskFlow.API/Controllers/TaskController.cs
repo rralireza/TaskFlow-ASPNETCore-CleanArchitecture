@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
 using TaskFlow.Application.DTO.TaskItem;
 using TaskFlow.Application.Intefaces.Services.TaskItem;
@@ -17,6 +18,7 @@ namespace TaskFlow.API.Controllers
         }
 
         [HttpPost(nameof(CreateTask))]
+        [Authorize(Policy = "TaskCreators")]
         public async Task<IActionResult> CreateTask(AddTaskItemRequestDto request)
         {
             try

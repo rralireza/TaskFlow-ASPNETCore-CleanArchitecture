@@ -120,6 +120,12 @@ public static class ConfigurationServiceExtension
                 policy.RequireAuthenticatedUser();
                 policy.RequireRole("Admin", "User");
             });
+
+            options.AddPolicy("TasksCreators", policy =>
+            {
+                policy.RequireAuthenticatedUser();
+                policy.RequireRole("Admin", "User");
+            });
         });
 
         #endregion

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "E:\\Projects\\AspDotNet\\TaskFlow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A24D7E18-21B6-468B-80E4-FA0E91427376}|TaskFlow.Application\\TaskFlow.Application.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.application\\services\\taskitem\\taskitemadderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,33 +38,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "TaskFlow.API\\Controllers\\ProjectController.cs",
+              "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "TaskFlow.API\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T19:35:32.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ConfigurationServiceExtension.cs",
               "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
               "RelativeDocumentMoniker": "TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
               "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
               "RelativeToolTip": "TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAQwHkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAH4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T19:30:55.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TaskController.cs",
               "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "TaskFlow.API\\Controllers\\TaskController.cs",
               "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Controllers\\TaskController.cs",
               "RelativeToolTip": "TaskFlow.API\\Controllers\\TaskController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T19:26:22.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TaskItem.cs",
               "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.Domain\\Entities\\TaskItem.cs",
               "RelativeDocumentMoniker": "TaskFlow.Domain\\Entities\\TaskItem.cs",
@@ -68,12 +85,11 @@
               "RelativeToolTip": "TaskFlow.Domain\\Entities\\TaskItem.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T19:20:38.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T19:20:38.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TaskItemAdderService.cs",
               "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.Application\\Services\\TaskItem\\TaskItemAdderService.cs",
               "RelativeDocumentMoniker": "TaskFlow.Application\\Services\\TaskItem\\TaskItemAdderService.cs",
@@ -81,8 +97,7 @@
               "RelativeToolTip": "TaskFlow.Application\\Services\\TaskItem\\TaskItemAdderService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAUwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T19:18:38.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T19:18:38.719Z"
             }
           ]
         }
