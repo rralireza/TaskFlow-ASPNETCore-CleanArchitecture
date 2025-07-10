@@ -121,7 +121,7 @@ public static class ConfigurationServiceExtension
                 policy.RequireRole("Admin", "User");
             });
 
-            options.AddPolicy("TasksCreators", policy =>
+            options.AddPolicy("TaskCreators", policy =>
             {
                 policy.RequireAuthenticatedUser();
                 policy.RequireRole("Admin", "User");

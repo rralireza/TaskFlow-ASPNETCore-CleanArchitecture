@@ -19,7 +19,7 @@ namespace TaskFlow.API.Controllers
 
         [HttpPost(nameof(CreateTask))]
         [Authorize(Policy = "TaskCreators")]
-        public async Task<IActionResult> CreateTask(AddTaskItemRequestDto request)
+        public async Task<IActionResult> CreateTask([FromBody] AddTaskItemRequestDto request)
         {
             try
             {
