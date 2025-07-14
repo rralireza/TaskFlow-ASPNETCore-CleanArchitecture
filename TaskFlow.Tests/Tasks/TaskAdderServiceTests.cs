@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using FluentAssertions;
+using FluentValidation;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System.Linq.Expressions;
@@ -103,5 +104,32 @@ public class TaskAdderServiceTests
         Assert.Equal(project.Title, result.Project);
         Assert.NotNull(insertedTask);
         Assert.Equal(userId, insertedTask.InsertUser);
+    }
+
+    [Fact]
+    public async Task AddTask_ShouldThrowUnauthorizedAccessException_WhenUserIsNotAuthenticated()
+    {
+        //Arrange
+        AddTaskItemRequestDto request = new()
+        {
+            Title = "Test Title",
+            Description = "Test Description",
+            Status = (byte)TaskStatus.ToDo,
+            Priority = (byte)TaskPriority.Medium,
+            DeadLine = DateTime.Now.AddDays(3),
+            ProjectId = Guid.NewGuid(),
+            AssignedToUserId = Guid.Empty
+        };
+
+        _validator
+            .Setup(x => x.Validate(It.IsAny<AddTaskItemRequestDto>()))
+            .Returns(new FluentValidation.Results.ValidationResult());
+
+        _currentUserService
+            .Setup(x => x.UserId)
+            .Returns((Guid?)null);
+
+        //Act & Assert
+        await Assert.ThrowsAsync<UnauthorizedAccessException>(() => _service.AddTaskItem(request));
     }
 }
