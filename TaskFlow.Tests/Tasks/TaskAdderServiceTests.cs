@@ -134,7 +134,7 @@ public class TaskAdderServiceTests
     }
 
     [Fact]
-    public async Task AddTask_ShouldThrowKeyNotFoundException_WhenProjectNotFound()
+    public async Task AddTask_ShouldThrowException_WhenProjectNotFound()
     {
         //Arrange
         Guid userId = Guid.NewGuid();
@@ -174,5 +174,56 @@ public class TaskAdderServiceTests
 
         //Act & Assert
         await Assert.ThrowsAsync<Exception>(() => _service.AddTaskItem(request));
+    }
+
+    [Fact]
+    public async Task AddTask_ShouldThrowUnauthorizedAccessException_WhenUserIsNotOWnerOrAdmin()
+    {
+        //Arrange
+        Guid userId = Guid.NewGuid();
+
+        Guid projectId = Guid.NewGuid();
+
+        AddTaskItemRequestDto request = new()
+        {
+            Title = "Test Title",
+            Description = "Test Description",
+            Status = (byte)TaskStatus.ToDo,
+            Priority = (byte)TaskPriority.Medium,
+            DeadLine = DateTime.Now.AddDays(3),
+            ProjectId = projectId,
+            AssignedToUserId = Guid.Empty
+        };
+
+        User casualUser = new()
+        {
+            Id = userId,
+            Role = (byte)UserRolesEnum.User
+        };
+
+        Project project = new()
+        {
+            Id = projectId,
+            CreatedByUserId = Guid.NewGuid()
+        };
+
+        _validator
+            .Setup(x => x.Validate(It.IsAny<AddTaskItemRequestDto>()))
+            .Returns(new FluentValidation.Results.ValidationResult());
+
+        _currentUserService
+            .Setup(x => x.UserId)
+            .Returns(userId);
+
+        _unitOfWork
+            .Setup(x => x.Users.GetByIdAsync(userId))
+            .ReturnsAsync(casualUser);
+
+        _unitOfWork
+            .Setup(x => x.Projects.GetByIdAsync(projectId))
+            .ReturnsAsync(project);
+
+        //Act & Assert
+        await Assert.ThrowsAsync<UnauthorizedAccessException>(() => _service.AddTaskItem(request));
     }
 }
