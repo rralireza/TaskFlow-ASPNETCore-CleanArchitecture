@@ -132,4 +132,47 @@ public class TaskAdderServiceTests
         //Act & Assert
         await Assert.ThrowsAsync<UnauthorizedAccessException>(() => _service.AddTaskItem(request));
     }
+
+    [Fact]
+    public async Task AddTask_ShouldThrowKeyNotFoundException_WhenProjectNotFound()
+    {
+        //Arrange
+        Guid userId = Guid.NewGuid();
+
+        AddTaskItemRequestDto request = new()
+        {
+            Title = "Test Title",
+            Description = "Test Description",
+            DeadLine = DateTime.Now.AddDays(3),
+            Status = (byte)TaskStatus.ToDo,
+            Priority = (byte)TaskPriority.Medium,
+            ProjectId = Guid.NewGuid(),
+            AssignedToUserId = Guid.Empty
+        };
+
+        User user = new()
+        {
+            Id = userId,
+            Role = (byte)UserRolesEnum.Admin
+        };
+
+        _validator
+            .Setup(x => x.Validate(It.IsAny<AddTaskItemRequestDto>()))
+            .Returns(new FluentValidation.Results.ValidationResult());
+
+        _currentUserService
+            .Setup(x => x.UserId)
+            .Returns(userId);
+
+        _unitOfWork
+            .Setup(x => x.Users.GetByIdAsync(userId))
+            .ReturnsAsync(user);
+
+        _unitOfWork
+            .Setup(x => x.Projects.GetByIdAsync(request.ProjectId))
+            .ReturnsAsync((Project?)null);
+
+        //Act & Assert
+        await Assert.ThrowsAsync<Exception>(() => _service.AddTaskItem(request));
+    }
 }
