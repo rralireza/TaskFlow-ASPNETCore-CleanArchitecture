@@ -5,8 +5,8 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.AssemblyInfoInputs.cache
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.AssemblyInfo.cs
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.sourcelink.json
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\refint\TaskFlow.Domain.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.pdb
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\ref\TaskFlow.Domain.dll
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.Domain\obj\Debug\net9.0\TaskFlow.Domain.sourcelink.json

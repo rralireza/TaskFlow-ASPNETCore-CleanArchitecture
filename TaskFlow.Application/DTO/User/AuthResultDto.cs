@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.User;
 
-public class AuthResultDto
+public sealed class AuthResultDto
 {
     public string Token { get; set; }
 

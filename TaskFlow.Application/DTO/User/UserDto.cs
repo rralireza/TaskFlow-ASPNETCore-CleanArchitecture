@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.User;
 
-public class UserDto
+public sealed class UserDto
 {
     public Guid Id { get; set; }
 

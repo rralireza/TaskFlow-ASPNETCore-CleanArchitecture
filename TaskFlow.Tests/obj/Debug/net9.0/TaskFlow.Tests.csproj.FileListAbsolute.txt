@@ -115,10 +115,10 @@ E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.Ge
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.AssemblyInfoInputs.cache
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.AssemblyInfo.cs
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.csproj.CoreCompileInputs.cache
+E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.sourcelink.json
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.E258A3B7.Up2Date
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\refint\TaskFlow.Tests.dll
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.pdb
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.genruntimeconfig.cache
 E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\ref\TaskFlow.Tests.dll
-E:\Projects\AspDotNet\TaskFlow\TaskFlow.Tests\obj\Debug\net9.0\TaskFlow.Tests.sourcelink.json

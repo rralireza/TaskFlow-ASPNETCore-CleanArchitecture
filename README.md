@@ -102,6 +102,38 @@ dotnet test TaskFlow.Tests
 
 ---
 
+## Docker
+
+1. Create your local environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   In PowerShell:
+
+   ```powershell
+   Copy-Item .env.example .env
+   ```
+
+2. Replace the example values in `.env`, particularly `MSSQL_SA_PASSWORD` and `JWT_KEY`.
+
+3. Build and start the API and SQL Server:
+
+   ```bash
+   docker compose up --build
+   ```
+
+   The API is available at `http://localhost:8080`. Database migrations run automatically when the API starts. SQL Server data is retained in the `sqlserver-data` Docker volume.
+
+4. Stop the stack with:
+
+   ```bash
+   docker compose down
+   ```
+
+---
+
 ## ✨ Future Improvements
 
 - [ ] Add user authentication and roles

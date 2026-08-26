@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.User;
 
-public class CreateUserDto
+public sealed class CreateUserDto
 {
     public string Fullname { get; set; } = string.Empty;
 

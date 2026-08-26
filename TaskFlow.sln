@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12105.275 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow.API", "TaskFlow.API\TaskFlow.API.csproj", "{CECD71FE-13B1-46D9-A0C2-074F0416AC51}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow.Application", "TaskFlow.Application\TaskFlow.Application.csproj", "{A24D7E18-21B6-468B-80E4-FA0E91427376}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow.Tests", "TaskFlow.Tests\TaskFlow.Tests.csproj", "{8C738373-63F8-4C29-BBA1-E99365FCF141}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D6EA3207-E47F-45F8-8925-63DE8B917E9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{8C738373-63F8-4C29-BBA1-E99365FCF141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C738373-63F8-4C29-BBA1-E99365FCF141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C738373-63F8-4C29-BBA1-E99365FCF141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EA3207-E47F-45F8-8925-63DE8B917E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EA3207-E47F-45F8-8925-63DE8B917E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EA3207-E47F-45F8-8925-63DE8B917E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EA3207-E47F-45F8-8925-63DE8B917E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

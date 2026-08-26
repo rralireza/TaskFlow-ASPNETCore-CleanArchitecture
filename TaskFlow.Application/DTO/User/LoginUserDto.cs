@@ -1,6 +1,6 @@
 ﻿namespace TaskFlow.Application.DTO.User;
 
-public class LoginUserDto
+public sealed class LoginUserDto
 {
     public string Email { get; set; }
 

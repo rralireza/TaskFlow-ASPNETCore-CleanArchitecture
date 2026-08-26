@@ -1,0 +1,11 @@
+.git
+.github
+.vs
+**/bin
+**/obj
+**/*.user
+**/*.suo
+.env
+Dockerfile*
+compose*.yaml
+README.md

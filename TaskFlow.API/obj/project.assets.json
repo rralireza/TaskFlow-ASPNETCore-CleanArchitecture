@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net9.0": {
       "Azure.Core/1.38.0": {
@@ -7695,7 +7695,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alireza\\.nuget\\packages\\": {},
+    "E:\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
@@ -7704,7 +7704,7 @@
       "projectUniqueName": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\TaskFlow.API.csproj",
       "projectName": "TaskFlow.API",
       "projectPath": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\TaskFlow.API.csproj",
-      "packagesPath": "C:\\Users\\Alireza\\.nuget\\packages\\",
+      "packagesPath": "E:\\NuGetPackages",
       "outputPath": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
@@ -7724,6 +7724,7 @@
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
             "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.Application\\TaskFlow.Application.csproj": {
@@ -7748,10 +7749,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
@@ -7800,7 +7802,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

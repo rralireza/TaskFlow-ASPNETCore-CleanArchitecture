@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\Projects\\AspDotNet\\TaskFlow\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A24D7E18-21B6-468B-80E4-FA0E91427376}|TaskFlow.Application\\TaskFlow.Application.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.application\\services\\taskitem\\taskitemgetterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A24D7E18-21B6-468B-80E4-FA0E91427376}|TaskFlow.Application\\TaskFlow.Application.csproj|solutionrelative:taskflow.application\\services\\taskitem\\taskitemgetterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|e:\\projects\\aspdotnet\\taskflow\\taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CECD71FE-13B1-46D9-A0C2-074F0416AC51}|TaskFlow.API\\TaskFlow.API.csproj|solutionrelative:taskflow.api\\startupextensions\\configurationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,23 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TaskItemGetterService.cs",
-              "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.Application\\Services\\TaskItem\\TaskItemGetterService.cs",
-              "RelativeDocumentMoniker": "TaskFlow.Application\\Services\\TaskItem\\TaskItemGetterService.cs",
-              "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.Application\\Services\\TaskItem\\TaskItemGetterService.cs",
-              "RelativeToolTip": "TaskFlow.Application\\Services\\TaskItem\\TaskItemGetterService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwEUAAAAXAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Program.cs",
+              "RelativeDocumentMoniker": "TaskFlow.API\\Program.cs",
+              "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\Program.cs",
+              "RelativeToolTip": "TaskFlow.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T06:33:55.868Z",
+              "WhenOpened": "2025-11-03T15:27:41.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigurationServiceExtension.cs",
+              "DocumentMoniker": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
+              "RelativeDocumentMoniker": "TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
+              "ToolTip": "E:\\Projects\\AspDotNet\\TaskFlow\\TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
+              "RelativeToolTip": "TaskFlow.API\\StartupExtensions\\ConfigurationServiceExtension.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T15:27:39.137Z",
               "EditorCaption": ""
             }
           ]
