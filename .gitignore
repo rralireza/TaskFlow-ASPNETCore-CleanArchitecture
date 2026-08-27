@@ -1,4 +1,6 @@
 # Build output and intermediate files
+[Nn]ode_modules/
+**/dist/
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/

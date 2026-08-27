@@ -31,6 +31,8 @@ if (!app.Environment.IsEnvironment("Docker"))
     app.UseHttpsRedirection();
 }
 
+app.UseCors("TaskFlowWeb");
+
 app.UseAuthentication();
 
 app.UseAuthorization();

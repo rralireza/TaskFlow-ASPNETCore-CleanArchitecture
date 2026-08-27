@@ -92,6 +92,20 @@ TaskFlow/
    https://localhost:7000/
    ```
 
+### React web UI
+
+The RTL React dashboard lives in `TaskFlow.Web` and uses the API endpoints for authentication, projects, and task creation.
+
+```bash
+cd TaskFlow.Web
+npm install
+npm run dev
+```
+
+> فایل `index.html` را مستقیماً با دوبارکلیک باز نکنید؛ React/Vite باید از طریق dev server اجرا شود. سپس آدرس `http://localhost:5173` را در مرورگر باز کنید.
+
+By default the UI connects to `http://localhost:5017/api`. Set `VITE_API_URL` when the API is running at another address, for example `VITE_API_URL=https://localhost:7000/api npm run dev`.
+
 ---
 
 ## 🧪 Running Tests

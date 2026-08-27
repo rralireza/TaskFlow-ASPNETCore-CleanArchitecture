@@ -53,7 +53,7 @@ public class ProjectGetterService : IProjectGetterService
 
         int totalCount = projects.Count();
 
-        int maxPage = (int)Math.Ceiling((double)totalCount / filter.PageSize);
+        int maxPage = Math.Max(1, (int)Math.Ceiling((double)totalCount / filter.PageSize));
 
         if (filter.PageNumber > maxPage)
             filter.PageNumber = maxPage;

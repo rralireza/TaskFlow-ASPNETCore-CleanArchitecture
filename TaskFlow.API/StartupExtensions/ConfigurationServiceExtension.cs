@@ -31,6 +31,16 @@ public static class ConfigurationServiceExtension
     {
         services.AddControllers();
 
+        services.AddCors(options =>
+        {
+            options.AddPolicy("TaskFlowWeb", policy =>
+            {
+                policy.WithOrigins("http://localhost:5173", "https://localhost:5173")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
+
         services.AddOpenApi();
 
         services.AddHttpContextAccessor();
@@ -76,6 +86,7 @@ public static class ConfigurationServiceExtension
         services.AddScoped(typeof(IProjectDeleterService), typeof(ProjectDeleterService));
 
         services.AddScoped(typeof(ITaskItemAdderService), typeof(TaskItemAdderService));
+        services.AddScoped(typeof(ITaskItemGetterService), typeof(TaskItemGetterService));
 
         #endregion
 

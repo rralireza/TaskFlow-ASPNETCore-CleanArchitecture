@@ -21,6 +21,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFlow.Tests", "TaskFlow.
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D6EA3207-E47F-45F8-8925-63DE8B917E9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TaskFlow.Web", "TaskFlow.Web", "{B8F87F13-1E70-4CF0-9C98-B8D5C9B58F04}"
+	ProjectSection(SolutionItems) = preProject
+		TaskFlow.Web\.env.example = TaskFlow.Web\.env.example
+		TaskFlow.Web\index.html = TaskFlow.Web\index.html
+		TaskFlow.Web\package.json = TaskFlow.Web\package.json
+		TaskFlow.Web\package-lock.json = TaskFlow.Web\package-lock.json
+		TaskFlow.Web\src\main.jsx = TaskFlow.Web\src\main.jsx
+		TaskFlow.Web\src\styles.css = TaskFlow.Web\src\styles.css
+		TaskFlow.Web\vite.config.js = TaskFlow.Web\vite.config.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

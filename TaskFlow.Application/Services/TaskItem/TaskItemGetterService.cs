@@ -50,7 +50,7 @@ public sealed class TaskItemGetterService : ITaskItemGetterService
 
         if (filter.PageSize <= 0) filter.PageSize = 10;
 
-        int maxPage = (int)Math.Ceiling((double)totalCount / filter.PageSize);
+        int maxPage = Math.Max(1, (int)Math.Ceiling((double)totalCount / filter.PageSize));
 
         if (filter.PageNumber > maxPage) filter.PageNumber = maxPage;
 
@@ -65,7 +65,7 @@ public sealed class TaskItemGetterService : ITaskItemGetterService
                 Description = x.Description,
                 DeadLine = x.Deadline,
                 Status = x.Status.ToString(),
-                Priority = x.Status.ToString(),
+                Priority = x.Priority.ToString(),
                 Project = x.Project.Title
             }).ToList();
 
